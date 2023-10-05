@@ -1,4 +1,4 @@
-const wordsList = [
+module.exports = [
   "ПОЭЗИЯ",
   "СЛУЧАЙ",
   "МУЗЕЙ",
@@ -1000,22 +1000,3 @@ const wordsList = [
   "МЕСЯЦ",
   "СПОР",
 ];
-
-function getRandomValues(arr) {
-  const limitCard = 25;
-  const randomValues = [];
-
-  for (let i = 0; i <= limitCard; i++) {
-    const randomIndex = Math.floor(Math.random() * limitCard);
-    const randomValue = arr[randomIndex];
-    if (!randomValues.includes(randomValue)) {
-      randomValues.push(randomValue);
-    }
-  }
-
-  return randomValues;
-}
-
-getRandomValues(wordsList);
-
-module.exports = wordsList;
